@@ -83,6 +83,7 @@ Foram utilizadas boas práticas de tratamento de texto, balanceamento de classes
 
 
 # 5. Principais Insights de Negócio
+
 * Avaliações positivas frequentemente mencionam entrega rápida, qualidade do produto e boa relação custo-benefício.
 
 * Comentários negativos costumam apontar problemas com atrasos, defeitos em produtos e dificuldades com o serviço de atendimento.
@@ -123,30 +124,21 @@ Foram utilizadas boas práticas de tratamento de texto, balanceamento de classes
 
 * **Resultados:**
 
-    * BERTimbau: O modelo apresentou os melhores resultados, com acurácia superior a 92% e F1-score de 90%.
+    * Devido a conflitos relacionados com o google colab (plataforma no qual eu estava utilizando os notebooks) e o github, não será possível mostrar os outputs do código, contudo, segue prints de resultados de acurácia e loss dos modelos:
 
-    * LSTM: Desempenho satisfatório com acurácia de 87% e F1-score de 83%.
+    * **LSTM:**
+          * ![image](https://github.com/user-attachments/assets/ea59eae4-7f97-41c0-adc3-a99b3fa67cdc)
+                 *  Mesmo sem nenhum conhecimento linguístico prévio, o modelo demonstrou uma notável capacidade de aprendizado, atingindo uma acurácia de validação de 77.9%. Este resultado valida a arquitetura como uma solução viável para a tarefa e serve como um forte ponto de partida para comparação com modelos pré-treinados mais complexos.
+      
+    * **BERTimbau**
+          * Modelo com as classes Positivo e Negativo:
+            ![image](https://github.com/user-attachments/assets/288960b7-deb2-46ac-b2c5-bfc886478cc0)
+                * Os resultados do treinamento são positivos e demonstram a eficácia do modelo BERTIMBAU sem a classe neutra. O ponto de maior destaque é a acurácia de validação (val_accuracy), que atingiu 95.05%, indicando que o modelo generaliza muito bem e consegue classificar         corretamente as avaliações que nunca viu antes com alta precisão.
+                * Outro sinal crucial de um bom treinamento é a pequena diferença entre as métricas de treino e as de validação. A acurácia no treino foi de 96.3% e na validação 95.1%; a proximidade entre esses valores sugere que o modelo não está sofrendo de overfitting significativo, ou seja, ele não apenas "decorou" os dados de treino, mas aprendeu os padrões subjacentes do sentimento.
+          * Modelo com as classes Positivo, Neutro e Negativo:
+          ![image](https://github.com/user-attachments/assets/4b4b4465-1ce1-4070-ad03-0f9a0fb94b10)
+                 * Este modelo, que lida com as três classes (positivo, negativo e neutro), apresentou um comportamento esperado para um problema de maior complexidade. A acurácia de validação máxima de 79.4% na segunda época é um resultado sólido, considerando a dificuldade e a ambiguidade inerentes à classificação de um sentimento "neutro", que adiciona um ruído considerável à tarefa.
 
-    * Matriz de confusão: Ambos os modelos têm maior facilidade em classificar corretamente avaliações positivas, mas o BERT demonstra melhor equilíbrio.
-
-# 7. Conclusão e Próximos Passos
-    O modelo BERTimbau demonstrou ser a melhor escolha para a classificação de sentimento em avaliações de e-commerce em português brasileiro, superando as demais arquiteturas testadas.
-
-    A comparação entre diferentes arquiteturas de deep learning evidenciou a superioridade dos modelos baseados em transformer para esta tarefa específica.
-
-* **Próximos passos:**
-
-    * Implementar análise de aspectos específicos dentro das avaliações (preço, qualidade, entrega, atendimento).
-
-    * Desenvolver visualizações interativas para acompanhamento em tempo real do sentimento dos clientes.
-
-    * Explorar técnicas de oversampling para melhorar ainda mais o desempenho em casos com poucos exemplos.
-
-    * Criar um sistema de alerta para avaliações muito negativas que requerem atenção imediata.
 
 # 8. Considerações Finais
-    Este projeto demonstra a eficácia de técnicas modernas de NLP aplicadas à análise de sentimento em português brasileiro. A abordagem metodológica adotada, desde o pré-processamento textual até a comparação de modelos, permitiu desenvolver uma solução robusta para classificação automática de avaliações de clientes.
-
-    O modelo final baseado em BERT alcançou excelentes resultados, com acurácia superior a 92% e bom equilíbrio entre precisão e recall. Essa ferramenta permitirá que empresas de e-commerce processem grandes volumes de feedback de clientes de forma automática e confiável, direcionando esforços de melhoria para áreas específicas e monitorando o impacto de mudanças implementadas.
-
-    A capacidade de analisar sentimentos em texto não estruturado representa uma vantagem competitiva significativa no cenário atual de e-commerce, onde entender e responder ao feedback dos clientes de forma ágil é fundamental para o sucesso do negócio.
+   Este projeto explorou e comparou diferentes arquiteturas de redes neurais para a tarefa de análise de sentimento em português. O modelo de melhor desempenho foi um Transformer pré-treinado (BERTIMBAU), que alcançou uma acurácia de 95.1% em uma classificação binária (positivo vs. negativo). Para a tarefa mais complexa de três classes (incluindo o sentimento neutro), o mesmo modelo atingiu 79.4% de acurácia. Adicionalmente, uma rede LSTM Bidirecional treinada do zero foi implementada como baseline, alcançando um resultado sólido de 77.9%, o que reforça a vantagem significativa de se utilizar modelos pré-treinados para esta tarefa de PLN.
