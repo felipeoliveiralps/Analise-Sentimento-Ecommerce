@@ -6,7 +6,7 @@ Este é um projeto de Processamento de Linguagem Natural (NLP) focado na anális
 Foram utilizadas boas práticas de tratamento de texto, balanceamento de classes, avaliação de modelos e visualização para facilitar a compreensão dos resultados e apoiar decisões de negócio baseadas em feedback de clientes.
 
 # 2. Ferramentas e Tecnologias
-<img alt="Python" src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&amp;logo=python&amp;logoColor=ffdd54">
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 <img alt="Pandas" src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&amp;logo=pandas&amp;logoColor=white">
 <img alt="NumPy" src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&amp;logo=numpy&amp;logoColor=white">
 <img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&amp;logo=TensorFlow&amp;logoColor=white">
@@ -14,7 +14,7 @@ Foram utilizadas boas práticas de tratamento de texto, balanceamento de classes
 <img alt="Jupyter Notebook" src="https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&amp;logo=jupyter&amp;logoColor=white">
 <img alt="Hugging Face" src="https://img.shields.io/badge/Hugging Face-FFBC00.svg?style=for-the-badge&amp;logo=huggingface&amp;logoColor=black">
 <img alt="spaCy" src="https://img.shields.io/badge/spaCy-09A3D5.svg?style=for-the-badge&amp;logo=spacy&amp;logoColor=white">
-<img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&amp;logo=scikit-learn&amp;logoColor=white">
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 
 
 # 3. Problema de Negócio e Objetivo do Projeto
