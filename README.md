@@ -126,18 +126,18 @@ Foram utilizadas boas práticas de tratamento de texto, balanceamento de classes
 
     * Devido a conflitos relacionados com o google colab (plataforma no qual eu estava utilizando os notebooks) e o github, não será possível mostrar os outputs do código, contudo, segue prints de resultados de acurácia e loss dos modelos:
 
-    * **LSTM:**
-          * ![image](https://github.com/user-attachments/assets/ea59eae4-7f97-41c0-adc3-a99b3fa67cdc)
-                 *  Mesmo sem nenhum conhecimento linguístico prévio, o modelo demonstrou uma notável capacidade de aprendizado, atingindo uma acurácia de validação de 77.9%. Este resultado valida a arquitetura como uma solução viável para a tarefa e serve como um forte ponto de partida para comparação com modelos pré-treinados mais complexos.
+    * **LSTM Bidirecional:**
+          ![image](https://github.com/user-attachments/assets/ea59eae4-7f97-41c0-adc3-a99b3fa67cdc)
+            *  Mesmo sem nenhum conhecimento linguístico prévio, o modelo demonstrou uma notável capacidade de aprendizado, atingindo uma acurácia de validação de 77.9%. Este resultado valida a arquitetura como uma solução viável para a tarefa e serve como um forte ponto de partida para comparação com modelos pré-treinados mais complexos.
       
     * **BERTimbau**
-          * Modelo com as classes Positivo e Negativo:
+      * Modelo com as classes Positivo e Negativo:
             ![image](https://github.com/user-attachments/assets/288960b7-deb2-46ac-b2c5-bfc886478cc0)
-                * Os resultados do treinamento são positivos e demonstram a eficácia do modelo BERTIMBAU sem a classe neutra. O ponto de maior destaque é a acurácia de validação (val_accuracy), que atingiu 95.05%, indicando que o modelo generaliza muito bem e consegue classificar         corretamente as avaliações que nunca viu antes com alta precisão.
-                * Outro sinal crucial de um bom treinamento é a pequena diferença entre as métricas de treino e as de validação. A acurácia no treino foi de 96.3% e na validação 95.1%; a proximidade entre esses valores sugere que o modelo não está sofrendo de overfitting significativo, ou seja, ele não apenas "decorou" os dados de treino, mas aprendeu os padrões subjacentes do sentimento.
-          * Modelo com as classes Positivo, Neutro e Negativo:
+          * Os resultados do treinamento são positivos e demonstram a eficácia do modelo BERTIMBAU sem a classe neutra. O ponto de maior destaque é a acurácia de validação (val_accuracy), que atingiu 95.05%, indicando que o modelo generaliza muito bem e consegue classificar         corretamente as avaliações que nunca viu antes com alta precisão.
+            * Outro sinal crucial de um bom treinamento é a pequena diferença entre as métricas de treino e as de validação. A acurácia no treino foi de 96.3% e na validação 95.1%; a proximidade entre esses valores sugere que o modelo não está sofrendo de overfitting significativo, ou seja, ele não apenas "decorou" os dados de treino, mas aprendeu os padrões subjacentes do sentimento.
+      * Modelo com as classes Positivo, Neutro e Negativo:
           ![image](https://github.com/user-attachments/assets/4b4b4465-1ce1-4070-ad03-0f9a0fb94b10)
-                 * Este modelo, que lida com as três classes (positivo, negativo e neutro), apresentou um comportamento esperado para um problema de maior complexidade. A acurácia de validação máxima de 79.4% na segunda época é um resultado sólido, considerando a dificuldade e a ambiguidade inerentes à classificação de um sentimento "neutro", que adiciona um ruído considerável à tarefa.
+        * Este modelo, que lida com as três classes (positivo, negativo e neutro), apresentou um comportamento esperado para um problema de maior complexidade. A acurácia de validação máxima de 79.4% na segunda época é um resultado sólido, considerando a dificuldade e a ambiguidade inerentes à classificação de um sentimento "neutro", que adiciona um ruído considerável à tarefa.
 
 
 # 8. Considerações Finais
