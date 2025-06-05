@@ -44,10 +44,6 @@ Foram utilizadas boas práticas de tratamento de texto, balanceamento de classes
 
     Os benefícios esperados com este projeto são diversos. Primeiramente, a automatização da classificação de avaliações permitirá um processamento mais rápido e eficiente do feedback dos clientes. A identificação precisa de problemas recorrentes possibilitará melhorias direcionadas em produtos e serviços. Além disso, o monitoramento contínuo do sentimento dos clientes auxiliará na medição do impacto de mudanças implementadas. Por fim, a capacidade de analisar grandes volumes de dados textuais fornecerá insights valiosos para estratégias de marketing e desenvolvimento de produtos.
 
-* **3.5 Conclusão**
-
-    Ao final, conseguimos desenvolver modelos com alta acurácia na classificação de sentimentos, com o BERT apresentando os melhores resultados. Isso permite que a empresa identifique automaticamente avaliações positivas e negativas, direcionando esforços de melhoria e atendimento com base em dados concretos.
-
 # 4. Pipeline da Solução
 * **4.1 Pré-processamento de texto:**
 
@@ -134,10 +130,10 @@ Foram utilizadas boas práticas de tratamento de texto, balanceamento de classes
       * Modelo com as classes Positivo e Negativo:
             ![image](https://github.com/user-attachments/assets/288960b7-deb2-46ac-b2c5-bfc886478cc0)
           * Os resultados do treinamento são positivos e demonstram a eficácia do modelo BERTIMBAU sem a classe neutra. O ponto de maior destaque é a acurácia de validação (val_accuracy), que atingiu 95.05%, indicando que o modelo generaliza muito bem e consegue classificar         corretamente as avaliações que nunca viu antes com alta precisão.
-            * Outro sinal crucial de um bom treinamento é a pequena diferença entre as métricas de treino e as de validação. A acurácia no treino foi de 96.3% e na validação 95.1%; a proximidade entre esses valores sugere que o modelo não está sofrendo de overfitting significativo, ou seja, ele não apenas "decorou" os dados de treino, mas aprendeu os padrões subjacentes do sentimento.
+          * Outro sinal crucial de um bom treinamento é a pequena diferença entre as métricas de treino e as de validação. A acurácia no treino foi de 96.3% e na validação 95.1%; a proximidade entre esses valores sugere que o modelo não está sofrendo de overfitting significativo, ou seja, ele não apenas "decorou" os dados de treino, mas aprendeu os padrões subjacentes do sentimento.
       * Modelo com as classes Positivo, Neutro e Negativo:
           ![image](https://github.com/user-attachments/assets/4b4b4465-1ce1-4070-ad03-0f9a0fb94b10)
-        * Este modelo, que lida com as três classes (positivo, negativo e neutro), apresentou um comportamento esperado para um problema de maior complexidade. A acurácia de validação máxima de 79.4% na segunda época é um resultado sólido, considerando a dificuldade e a ambiguidade inerentes à classificação de um sentimento "neutro", que adiciona um ruído considerável à tarefa.
+      * Este modelo, que lida com as três classes (positivo, negativo e neutro), apresentou um comportamento esperado para um problema de maior complexidade. A acurácia de validação máxima de 79.4% na segunda época é um resultado sólido, considerando a dificuldade e a ambiguidade inerentes à classificação de um sentimento "neutro", que adiciona um ruído considerável à tarefa.
 
 
 # 8. Considerações Finais
