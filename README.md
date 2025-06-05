@@ -40,10 +40,6 @@ Foram utilizadas boas práticas de tratamento de texto, balanceamento de classes
 
     O projeto tem como principal objetivo construir modelos de classificação de sentimento capazes de identificar com precisão avaliações positivas e negativas de clientes. Para isso, será realizado um extenso pré-processamento textual, removendo ruídos e normalizando o texto. Serão testadas diferentes arquiteturas de redes neurais (BERT e LSTM) para determinar qual oferece melhor desempenho na classificação de sentimento em português. O objetivo final é fornecer à empresa uma ferramenta confiável para processar automaticamente o feedback dos clientes e extrair insights acionáveis.
 
-* **3.4 Benefícios do Projeto**
-
-    Os benefícios esperados com este projeto são diversos. Primeiramente, a automatização da classificação de avaliações permitirá um processamento mais rápido e eficiente do feedback dos clientes. A identificação precisa de problemas recorrentes possibilitará melhorias direcionadas em produtos e serviços. Além disso, o monitoramento contínuo do sentimento dos clientes auxiliará na medição do impacto de mudanças implementadas. Por fim, a capacidade de analisar grandes volumes de dados textuais fornecerá insights valiosos para estratégias de marketing e desenvolvimento de produtos.
-
 # 4. Pipeline da Solução
 * **4.1 Pré-processamento de texto:**
 
