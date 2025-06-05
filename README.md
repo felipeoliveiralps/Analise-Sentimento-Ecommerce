@@ -69,10 +69,6 @@ Foram utilizadas boas práticas de tratamento de texto, balanceamento de classes
 
     Desenvolvimento de uma arquitetura de rede neural recorrente para capturar relações sequenciais no texto das avaliações.
 
-* **4.8 Avaliação com métricas: Acurácia, F1, Matriz de Confusão:**
-
-    Utilização de diversas métricas para avaliar o desempenho dos modelos, considerando o desbalanceamento de classes.
-
 
 # 5. Principais Insights de Negócio
 
